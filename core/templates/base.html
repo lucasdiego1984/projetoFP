@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{% block titulo %}{% endblock titulo %} - Financeiro Pessoal</title>
+
+  </head>
+
+  <body>
+    <!-- MENU -->
+    <a href="/pessoas/">Pessoas</a> | <a href="#">Contas</a> | <a href="#">Fluxo de Caixa</a>
+    <!-- FIM MENU -->
+    <br />
+    <hr>
+      <!-- CONTEUDO -->
+        {% block conteudo %}{% endblock conteudo %}
+      <!-- FIM CONTEUDO -->
+    <hr>
+
+    <!-- RODAPE -->
+    <footer>
+      <div align="center">&copy; Edson Lopes</div>
+    </footer>
+    <!-- FIM RODAPE -->
+    
+  </body>
+</html>
