@@ -4,7 +4,8 @@ from pessoas.models import Pessoa
 class Conta(models.Model):
     pessoa = models.ForeignKey(Pessoa)
 
-    #E = Entrada / S = Saida
+    #E - ENTRADA / S - SAIDA 
+
     tipo = models.CharField(db_index=True, max_length='1', blank=False, null=False) 
 
     descricao = models.CharField(db_index=True, max_length='200', blank=False, null=False)
